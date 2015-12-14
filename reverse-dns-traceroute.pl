@@ -4,7 +4,7 @@ use Net::Traceroute::PurePerl;
 $dbfile = "ip.txt";
 print "Starting Trace!\n";
 open (I, "$dbfile") or die "Unable to open: $dbfile";
-my @lines = <>;
+my @lines = <I>;
 close I;
 
 $counter = 1;
